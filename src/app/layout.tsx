@@ -16,6 +16,11 @@ export const metadata: Metadata = {
     'WHO-cGMP Herbal Extract Factory',
     'US FDA Registered Botanical Exporter'
   ],
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
   authors: [{ name: 'Mishari Phytolabs Private Limited' }],
   creator: 'Mishari Phytolabs',
   openGraph: {
@@ -78,6 +83,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased scroll-smooth">
       <head>
+        <link rel="icon" href="/logo.png" sizes="any" />
+        <link rel="apple-touch-icon" href="/logo.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
